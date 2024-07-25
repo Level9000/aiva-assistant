@@ -1,0 +1,31 @@
+.control-panel {
+    background-image: url('../images/control-panel-blank.png');
+    width: 2360px;
+    height: 1640px;
+}
+.nav-buttons-container {
+    width: 1200px;
+    height: 1200px;
+
+    position: absolute;
+    top:150px;
+    bottom: 0;
+    left: 450px;
+    right: 0;
+
+    margin: auto;
+}
+.nav-buttons {
+    background-color: #868b9f;
+    border: 15px solid;
+    color: black;
+    padding: 75px 95px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 64px;
+}
+.headers {
+    color: #868b9f;
+    font-size: 64px;
+}

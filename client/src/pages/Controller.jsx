@@ -42,7 +42,6 @@ const Controller = () => {
         }
     };
 
-
     return (
         <div className="control-panel">
             <div className="nav-buttons-container">

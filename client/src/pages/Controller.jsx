@@ -46,16 +46,20 @@ const Controller = () => {
     return (
         <div className="control-panel">
             <div className="nav-buttons-container">
-                <h1 className="headers">Scene 1</h1>
-                <button className="nav-buttons" onClick={() => playAudio('scene1Part1')}>1</button>
-                <button className="nav-buttons" onClick={() => playAudio('scene1Part2')}>2</button>
-                <button className="nav-buttons" onClick={() => playAudio('scene1Part3')}>3</button>
-                <button className="nav-buttons" onClick={() => playAudio('scene1Part4')}>4</button>
-                <h1 className="headers">Scene 2</h1>
-                <button className="nav-buttons" onClick={() => playAudio('scene2Part1')}>1</button>
-                <button className="nav-buttons" onClick={() => playAudio('scene2Part2')}>2</button>
-                <button className="nav-buttons" onClick={() => playAudio('scene2Part3')}>3</button>
-                <button className="nav-buttons" onClick={() => playAudio('scene2Part4')}>4</button>
+                <div className="scene" id="scene1">
+                    <h1 className="headers">Scene 1</h1>
+                    <button className="nav-buttons" onClick={() => playAudio('scene1Part1')}>1</button>
+                    <button className="nav-buttons" onClick={() => playAudio('scene1Part2')}>2</button>
+                    <button className="nav-buttons" onClick={() => playAudio('scene1Part3')}>3</button>
+                    <button className="nav-buttons" onClick={() => playAudio('scene1Part4')}>4</button>
+                </div>
+                <div className="scene" id="scene2">
+                    <h1 className="headers">Scene 2</h1>
+                    <button className="nav-buttons" onClick={() => playAudio('scene2Part1')}>1</button>
+                    <button className="nav-buttons" onClick={() => playAudio('scene2Part2')}>2</button>
+                    <button className="nav-buttons" onClick={() => playAudio('scene2Part3')}>3</button>
+                    <button className="nav-buttons" onClick={() => playAudio('scene2Part4')}>4</button>
+                </div>
             </div>
         </div>
     );

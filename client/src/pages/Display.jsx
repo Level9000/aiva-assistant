@@ -1,11 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {useWebSocket} from '../hooks/WebSocketContext'; // Adjust the path as necessary
+import './Display.css'
 
 function Display() {
     const [latestMessage, setLatestMessage] = useState('');
     const {ws, isReady} = useWebSocket();
-    const [isVisible, setIsVisible] = React.useState(false);
-    const toggleVisibility = () => setIsVisible(!isVisible);
 
     useEffect(() => {
         if (!ws || !isReady) {
@@ -24,12 +23,8 @@ function Display() {
     }, [ws, isReady]); // Depend on ws and isReady
 
     return (
-        <div>
+        <div className="pano">
             <p>Latest Message: {latestMessage}</p>
-            <button onClick={toggleVisibility}>Toggle Visibility</button>
-            <div style={{display: isVisible ? 'block' : 'none'}}>
-                    This content is toggled by changing the display style.
-            </div>
         </div>
     );
 }

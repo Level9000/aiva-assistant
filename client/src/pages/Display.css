@@ -1,10 +1,19 @@
 .pano {
     background-image: url('../../public/images/pano.jpg');
     background-size: cover;
-    width: 100vw;
-    height: 50vh;
-    position: relative;
     background-color: black;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+    position: relative;
     margin: 0;
     padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Set the background color to black */
+    min-height: 100%; /* Ensure it covers at least the full height of the viewport */
+    width: 100%; /* Cover the full width */
 }

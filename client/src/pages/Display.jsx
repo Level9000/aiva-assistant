@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useWebSocket} from '../hooks/WebSocketContext'; // Adjust the path as necessary
 import './Display.css'
+import aiva from '../videos/bot-talking.mp4'
 
 function Display() {
     const [latestMessage, setLatestMessage] = useState('');
@@ -24,6 +25,10 @@ function Display() {
 
     return (
         <div className="pano">
+            <video className="videoPlayer" width="320" height="240" loop autoPlay muted>
+                <source src={aiva} type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
             <p>Latest Message: {latestMessage}</p>
         </div>
     );

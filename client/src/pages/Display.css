@@ -10,6 +10,15 @@
     padding: 0;
 }
 
+.videoPlayer {
+    width: 11vw; /* 25% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Positioning it absolutely */
+    top: 50%; /* Center vertically */
+    right: 18%; /* Align to the right */
+    transform: translateY(-50%); /* Centering it vertically with respect to its height */
+}
+
 html, body {
     margin: 0;
     padding: 0;
